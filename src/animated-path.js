@@ -67,6 +67,10 @@ class AnimatedPath extends Component {
         })
     }
 
+    componentDidMount() {
+        this.props.barRef(this.component);
+    }
+    
     render() {
         return (
             <Path
