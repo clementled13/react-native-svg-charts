@@ -146,6 +146,7 @@ class PieChart extends PureComponent {
                                     const { key, onPress, svg } = data[ index ]
                                     return (
                                         <Path
+                                            ref={ref => svg.arcRef && svg.arcRef(ref) }
                                             key={ key }
                                             onPress={ onPress }
                                             { ...svg }
